@@ -1,0 +1,40 @@
+.body{
+    --background: rgb(219, 77, 42);
+  }
+
+.title{
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+}
+  
+ion-item{
+    --background: rgb(219, 77, 42);
+    --border-color: #fff;
+}
+
+.buttons{
+    font-weight: bold;
+    --background: rgba(27, 150, 221, 0.705);
+}
+
+.text-center{
+    text-align: center;
+}
+
+.label-group{
+    font-size: 20px;
+    color: #000;
+    font-weight: bold;
+}
+
+.value-group{
+    font-size: 15px;
+    color: #000;
+}
+
+.section{
+    background: #fff;
+    border: solid 1px #000;
+    border-radius: 15px;
+}

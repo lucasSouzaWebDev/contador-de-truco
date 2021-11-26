@@ -1,27 +1,28 @@
-#container {
+.body{
+  --background: rgb(219, 77, 42);
+}
+
+.title{
+  font-size: 22px;
+  font-weight: bold;
   text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  color: #fff;
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+.label-input{
+  color: #fff;
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
+.input-name{
+  color: #fff;
 }
 
-#container a {
-  text-decoration: none;
+ion-item{
+  --background: rgb(219, 77, 42);
+  --border-color: #fff;
+}
+
+.button-start{
+  font-weight: bold;
+  --background: rgba(27, 150, 221, 0.705);
 }

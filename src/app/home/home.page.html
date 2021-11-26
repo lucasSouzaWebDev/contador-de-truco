@@ -1,20 +1,36 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Contador de Truco
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+<ion-content class="body">
+  <ion-grid>
+    <ion-row>
+      <ion-col class="title">
+        Início
+      </ion-col>
+    </ion-row>
+    <form [formGroup]="_formParticipant" (ngSubmit)="submitForm()" novalidate>
+      <ion-row>
+        <ion-item>
+          <ion-label position="floating" class="label-input">Nome do(s) participante(s) 1:</ion-label>
+          <ion-input type="text" class="input-name" formControlName="name_group_1"></ion-input>
+        </ion-item>
+      </ion-row>
+      <ion-row>
+        <ion-item>
+          <ion-label position="floating" class="label-input">Nome do(s) participante(s) 2:</ion-label>
+          <ion-input type="text" class="input-name" formControlName="name_group_2"></ion-input>
+        </ion-item>
+      </ion-row>
+      <ion-row class="ion-align-items-center">
+        <ion-col size="12" class="ion-text-center">
+          <ion-button expand="block" class="button-start" type="submit">Iniciar</ion-button>
+        </ion-col>
+      </ion-row>
+    </form>
+  </ion-grid>
 </ion-content>
